@@ -31,7 +31,7 @@ pub fn videos_list(VideosListProps { videos, on_click }: &VideosListProps) -> Ht
 
                     html! {
                         <li key={video.id} onclick={on_video_select}>
-                          {format!("{} ({} views)", video.title, video.view_count)}
+                          {format!("{}", video.title)}
                         </li>
                     }
                 }).collect::<Html>()
